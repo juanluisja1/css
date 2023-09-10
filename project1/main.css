@@ -31,8 +31,10 @@
     vertical-align: middle;
 }
 
-.plans{
-    align-items: center;
+.plan__list{
+    width: 80%;
+    margin:auto;
+    text-align: center;
 }
 
 .plan--highlighted{
@@ -74,6 +76,8 @@
 .plan--highlighted .plan__pricing {
     color:#0e4f1f;
 }
+
+
 
 #key-features{
     background-color: #ff1b68;
