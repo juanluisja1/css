@@ -1,7 +1,30 @@
 
 
 #product-overview {
-    background: url(freedom.jpg)
+    background: url(freedom.jpg) left 10% top 5%/ cover no-repeat border-box;
+    /* background-image: url(freedom.jpg);
+    background-size:cover;
+    background-position: left 10% top 5%; */
+    position:relative;
+    width: 100%;
+    height:512px;
+    margin: 0;
+    z-index: 0;
+}
+
+
+.product-overview__branding{
+    color:white;
+    font-family: 'Anton', sans-serif ;
+    z-index: 0;
+    position: absolute; 
+    top:435px;
+    left: 36px;
+}
+
+.main_body{
+    width:100%;
+
 }
 
 .section-title{
@@ -10,14 +33,6 @@
 }
 
 
-#product-overview h1{
-    color:white;
-    font-family: 'Anton', sans-serif ;
-    width: 100%;
-    height:528px;
-    padding: 10px;
-    margin: 0;
-}
 
 
 

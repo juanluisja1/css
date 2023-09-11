@@ -6,15 +6,18 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-   
+ 
 }
+
+
 
 .main-header{
     background-color:#2ddf5c;
     width: 100%;
     padding: 8px 16px;
     position:fixed;
-    z-index: 0;
+    z-index: 1;
+   
 }
 
 .main-nav__item{
@@ -45,7 +48,12 @@ body{
     color:#0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    display: inline-block;
+    width: 32px;
+}
+
+.main-header__brand img{
+    width:100%
 }
 
 .main-nav {
