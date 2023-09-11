@@ -13,6 +13,8 @@ body{
     background-color:#2ddf5c;
     width: 100%;
     padding: 8px 16px;
+    position:fixed;
+    z-index: 0;
 }
 
 .main-nav__item{
@@ -78,7 +80,7 @@ body{
 .main-footer{
     background-color: black;
     padding: 32px;
-    margin-top:48px;
+    margin-top:118px;
 
 }
 
@@ -126,6 +128,7 @@ body{
 .button:focus{
     outline: none;
 }
+
 
 /* h1{
     margin-top: 0;
