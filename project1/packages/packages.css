@@ -41,14 +41,15 @@ main {
 
 .package__best-service{
     position:absolute;
-    top:-10px;
-    left:595px;
+    right: 32px;
+    top: -9px;
     color:#004f0db4;
     z-index: 0;
     font-size: 12px;
     background: #fd3131;
     color: white;
-    padding:8px
+    padding:8px;
+    display: inline;
     
     
 }
