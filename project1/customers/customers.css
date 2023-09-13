@@ -1,4 +1,18 @@
 
+/* overwrite 
+
+.main-footer
+
+
+*/
+
+.main-footer{
+  
+  margin-top:18rem;
+
+}
+
+/* end overwrite */
 .testimonial {
     font-size: 1.2rem;
      margin: 3rem 0;
@@ -46,13 +60,13 @@
   
   .testimonial__name {
     font-size:1.5rem;
-    margin: 3px;
+    margin: 0.25rem;
     color: #ff5454;
   }
   
   .testimonial__subtitle {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.15rem;
     color: rgb(251, 137, 137);
   }
   

@@ -15,7 +15,8 @@ main {
 
 .packages{
     width: 100%;
-    margin:2rem 0;
+    margin:0;
+    margin-top:2rem;
     display: inline-block;  
     align-items: center;
     
@@ -47,7 +48,7 @@ main {
     top: -9px;
     color:#004f0db4;
     z-index: 0;
-    font-size: 12px;
+    font-size: 0.8rem;
     background: #fd3131;
     color: white;
     padding:8px;
