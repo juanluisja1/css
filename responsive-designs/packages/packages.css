@@ -1,0 +1,143 @@
+
+
+.background{
+    background: url(../images/home-office-work-from-home.png) left 10% top 5%/ cover no-repeat border-box;
+    filter: grayscale(40%);
+    /* background:url(../images/home-office-work-from-home.png); */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index:-1 ;
+}
+
+
+.packages{
+    width: 100%;
+    margin:0;
+    margin-top:2rem;
+    display: inline-block;  
+    align-items: center;
+    
+ 
+}
+
+.package{
+    width: 90%;
+    margin: 3rem 0; 
+    padding: 2.1rem;
+    border: 4px solid #d6f8dc;
+    border-left: none;
+    box-shadow: 1px 1px 1px 0.5px rgb(205, 255, 205);
+    color:#0b3e19;
+    position: relative;
+    z-index: -1;
+}
+
+
+.package > a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.package__best-service{
+    position:absolute;
+    right: 2rem;
+    top: -9px;
+    color:#004f0db4;
+    z-index: 0;
+    font-size: 0.8rem;
+    background: #fd3131;
+    color: white;
+    padding:8px;
+    display: inline;
+    
+    
+}
+
+.package__title{
+    font-weight:bold;
+    font-size: 20px;
+    color: black;
+}
+
+
+#free {
+    background: rgba(168, 229, 178, 0.901);
+    float: right;
+    text-align: right;
+    border: 4px solid #d6f8dc;
+    border-right: none;
+    box-shadow: 1px, 1px, 1px, 1px, rgb(205, 255, 205);
+
+}
+
+#free:hover,
+#free:active {
+    border: 4px solid #ff1b68;
+    border-right: none;
+    box-shadow: 1px 1px 1px 0.3px rgb(156, 252, 156);
+    
+}
+
+.package:hover,
+.package:active {
+    border: 4px solid #ff1b68;
+    border-left: none;
+    box-shadow: 1px 1px 1px 0.5px rgb(156, 252, 156);
+    
+}
+
+.package__desc{
+    padding:0.25rem;
+    font-size: 1.3rem;
+    font-weight:500;
+}
+
+.package > a p{
+    padding: 1rem;
+    font-weight:300;
+    background-color: white;
+    border: 1px solid rgba(92, 88, 88, 0.643);
+    color:#004f0db4;
+}
+
+
+.clear--float{
+    clear:both;
+}
+
+#plus {
+    margin-top: 6.25rem;
+    background:#2ddf5dec;
+    color:white;
+}
+
+#plus .package__title{
+
+    background: rgba(255, 255, 255, 0.916);
+    color:#004f0db4;
+    padding: 0.75rem;
+    border-radius:16px;
+    box-shadow: 0 0 3px 2px #d4ffdce7;
+}
+
+
+
+#premium {
+    background: #004f0dfa;
+    color:white;
+}
+
+#premium .package__title{
+    background: #004f0db4;
+    color:white;
+    padding: 12px;
+    border-radius:16px;
+    box-shadow: 0 0 3px 2px #83f398;
+}
+
+#premium > a p {
+    font-weight:500;
+    color:#073012;
+}
