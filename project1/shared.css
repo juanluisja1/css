@@ -14,8 +14,8 @@ body{
     /* height: 100%; */
 }
 .backdrop{
-   display: none;
-    margin-top: 53px;;
+    display: none;
+    margin-top: 75px;;
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -213,6 +213,11 @@ body{
 .button:focus{
     outline: none;
 }
+
+.open{
+    display: block !important;
+}
+
 
 
 /* h1{
