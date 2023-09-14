@@ -15,7 +15,7 @@ body{
 }
 .backdrop{
     display: none;
-    margin-top: 75px;;
+    margin-top: 3.7rem;;
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -29,7 +29,7 @@ body{
     background-color:#2ddf5c;
     width: 100%;
     /* margin-top:0.8rem; */
-    padding: 0.5rem 0;
+    padding: 0 0.5rem;
     position:relative;
     z-index: 1;
    
@@ -40,6 +40,7 @@ body{
     margin: 0 1rem;
     text-decoration: none;
 }
+
 
 .main-nav__item, .mobile-nav__item a {
    
@@ -85,7 +86,8 @@ body{
 
 
 
-.main-header__brand{
+.main-header__brand a{
+    position: relative;
     color:#0e4f1f;
     text-decoration: none;
     font-weight: bold;
@@ -95,13 +97,14 @@ body{
 }
 
 .main-header__brand img{
-    width:100%
+    width:100%;
+    vertical-align: middle;
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 126px);
+    width: calc(100% - 122px);
     vertical-align: middle;
     font-size: 1.1rem;
     
