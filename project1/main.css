@@ -50,7 +50,7 @@
 }
 
 .section-title{
-    color: #2ddf5c;
+    color: #1ec44a;
     text-align: center;
     margin: 4rem 0;
 }
@@ -59,7 +59,7 @@
 .plan{
     background: #a0f6b7;
     text-align: center;
-    padding: 16px;
+    padding: 1.8rem 1rem;
     margin: 4rem 0.5rem;
     display: inline-block;
     width: calc(30%);

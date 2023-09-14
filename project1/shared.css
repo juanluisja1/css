@@ -25,9 +25,11 @@ body{
 
 
 .main-header{
+    text-decoration: none;
     background-color:#2ddf5c;
     width: 100%;
-    padding: 0.5rem 1rem;
+    /* margin-top:0.8rem; */
+    padding: 0.5rem 0;
     position:relative;
     z-index: 1;
    
@@ -36,17 +38,18 @@ body{
 .main-nav__item{
     display: inline-block;
     margin: 0 1rem;
+    text-decoration: none;
 }
 
-.main-nav__item a {
-    text-decoration: none;
+.main-nav__item, .mobile-nav__item a {
+   
     color: #0e4f1f;
     font-weight: bold;
     padding: 0.1rem 0;
    
 }
 
-.main-nav__item a:hover, .main-nav__item a:active {
+.main-nav__item a:hover , .main-nav__item a:active {
     color: seashell;
     border-bottom: 3px solid seashell;
 }
@@ -57,12 +60,38 @@ body{
     vertical-align: middle;
 }
 
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
+  
+
+
+
 .main-header__brand{
     color:#0e4f1f;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     width: 2rem;
+    vertical-align: middle;
 }
 
 .main-header__brand img{
@@ -72,26 +101,29 @@ body{
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 75px);
+    width: calc(100% - 126px);
     vertical-align: middle;
+    font-size: 1.1rem;
     
 }
 
-.main-nav__items{
+.main-nav__item a{
+    color: seashell;
     margin: 0;
-    padding:0;
+    padding:0.4rem 0;
+    text-decoration: none;
     list-style: none;
     vertical-align: middle;
 }
 
-.main-nav___item--cta a {
+.main-nav___item--cta a , .mobile-nav__item--cta a {
     color: seashell;
     background-color:#ff1b68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
-.main-nav___item--cta a:hover, .main-nav___item--cta a:active {
+.main-nav___item--cta a:hover, .main-nav___item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
 
     color: #ff1b68;
     background: seashell;
@@ -126,8 +158,40 @@ body{
 .main-footer__link a:active{
 
     color:#ccc;
-
 }
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background:rgb(255, 255, 255);
+    width: 80%;
+    height: 100vh;
+    
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+    
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+    
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
 
 
 .button{
