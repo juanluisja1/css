@@ -1,18 +1,16 @@
 
-/* overwrite 
 
-.main-footer
+/* overwriting classes */
 
-
-*/
-
-.main-footer{
-  
-  margin-top:18rem;
-
+.backdrop{
+   
+ margin-top:3.8rem;
+ 
 }
 
-/* end overwrite */
+/* end overwritting css classes */
+
+
 .testimonial {
     font-size: 1.2rem;
      margin: 3rem 0;

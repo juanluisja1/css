@@ -4,7 +4,7 @@
 .backdrop{
    
    
-    height: 140.5vh;
+    height: 170.5vh;
    
 }
 
@@ -40,7 +40,7 @@
     font-family: 'Anton', sans-serif ;
     z-index: 0;
     position: absolute; 
-    top:19rem;
+    top:15rem;
     left: 2rem;
 }
 

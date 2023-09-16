@@ -1,5 +1,15 @@
 
 
+/* overwriting classes */
+
+.backdrop{
+   
+    height: 124vh;
+   
+}
+
+/* end overwritting css classes */
+
 .background{
     background: url(../images/home-office-work-from-home.png) left 10% top 5%/ cover no-repeat border-box;
     filter: grayscale(40%);

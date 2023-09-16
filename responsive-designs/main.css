@@ -4,7 +4,7 @@
 .backdrop{
    
    
-    height: 140.5vh;
+    height: 170.5vh;
    
 }
 
@@ -16,7 +16,8 @@
 /* ---- end overwrite ---- */
 
 #product-overview {
-    background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url(freedom.jpg) left 10% bottom 70%/ cover no-repeat border-box, #ff1b68;
+    /* background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url(freedom.jpg) left 10% bottom 70%/ cover no-repeat border-box, #ff1b68; */
+    background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url(freedom.jpg) center/ cover no-repeat border-box, #ff1b68;
     /* background-image: url(freedom.jpg);
     background-size:cover;
     background-position: left 10% top 5%; */
@@ -27,59 +28,76 @@
     /* background-image: radial-gradient(ellipse ,blue, green,yellow); */
     /* abackground-image: radial-gradient(ellipse ,blue, green,yellow); */
     /* background-image: radial-gradient(ellipse farthest-corner at 15% 85% ,blue, green,yellow); */
+    
     position:relative;
     width: 100vw;
-    height:32vh;
+    height:42vh;
     margin: 0;
     z-index: 0;
 }
 
 
-.product-overview__branding{
+ .product-overview__branding{
     color:white;
     font-family: 'Anton', sans-serif ;
     z-index: 0;
     position: absolute; 
-    top:19rem;
+    top:12rem;
     left: 2rem;
+    font-size:1.6rem;
 }
+
+
+
+
+
+
+
 
 .main_body{
     width:100%;
 
 }
 
-.section-title{
-    color: #1ec44a;
-    text-align: center;
-    margin: 4rem 0;
-}
+
 
 
 .plan{
+    padding: 1.6rem;
     background: #a0f6b7;
     text-align: center;
-    padding: 1.8rem 1rem;
-    margin: 4rem 0.5rem;
-    display: inline-block;
-    width: calc(30%);
-    vertical-align: middle;
-    
+    padding: 0.8rem 0.5;
+    margin: 2rem auto;
+    max-width: 20rem;
+    border-radius:8px;
+    /* vertical-align: middle; */
+}
+
+.section-title{
+    text-align: center;
 }
 
 .plan__list{
-    width: 80%;
-    margin:auto;
     text-align: center;
+    width: 95%;
+    margin: 1rem 0.3rem;
+    
+    /* text-align: center; */
 }
 
 .plan--highlighted{
     background: #19b84c;
     color:white;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0,0, 0.5);
-    padding: 36px;
+    /* border: 3px solid rgb(255, 255, 255); */
+    /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.659); */
+    padding: 0.4rem 1rem;
 }
+
+.plan__list .plan:hover{
+    box-shadow: 1px 1px 10px 3px red ;
+}
+
 
 .plan__annotation {
 
@@ -121,15 +139,20 @@
 
 
 #key-features{
-    background-color: #ff1b68;
-    margin: 5rem 0;
+    /*  #ff1b68  */
+    background: linear-gradient(to bottom, transparent 1%,#ff1b68) ;
+    /* margin: 2rem 0; */
     padding: 0.8rem;
     padding-bottom: 1.6rem;
    
 }
 
+
+
+
 #key-features .section-title{
-    color: white;
+    color: #35b000;
+    margin-bottom: 4rem;
 }
 
 #key-features > ul {
@@ -148,17 +171,17 @@
     margin: 0;
     padding: 0;
     list-style:none;
-    color: white;
+    color: #030303;
     font-weight:bold;
     align-items: center;
-    width: 30%;
+    width:90%;
 }
 
 #key-features > ul, #key-features > ul > li, #key-features > ul > p{
     text-align: center;
     padding: 0;
     margin: 0;
-    font-size:20px;
+    font-size:1.2rem;
     vertical-align: top;
 
 }
@@ -173,7 +196,7 @@
 }
 
 .key--feature__image{
-    background:#ffcede;
+    background:#ffffff;
     width:128px;
     height: 120px;
     border: 2px solid #424242;
@@ -241,3 +264,164 @@
     color:black;
   }
 
+  .section-title{
+    font-size: 1.3rem;
+    margin: 3.5rem 0 0.8rem 0;
+   }
+
+   #key-features ul > li{
+    position: relative;
+    display: inline;
+    width: 30%;
+   }
+
+   .key--feature__image svg{
+    /* width: 5rem;
+    height: 5rem; */
+    width: 5rem;
+    height: 5rem;
+   }
+
+   .key--feature__image {
+    /* width: 8rem;
+    height: 8rem; */
+    width: 10rem;
+    height: 10rem;
+
+   }
+  
+   .feature{
+    font-size: 1.2rem;
+   }
+
+
+   .main-header__brand img{
+    position:fixed;
+    left: 2.2rem;
+    top:0.4rem;
+   }
+
+   .main-nav, .main-header__brand, .main-nav__items {
+    display: none;
+    /* margin:0;
+    padding:0; */
+   }
+
+
+
+  @media (min-width:42rem){
+    #product-overview{
+        height:45vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1{
+        font-size: 3rem;
+        top:13rem;
+    }
+
+    .main-nav, .main-header__brand, .main-nav__items {
+        display: inline-block;
+       
+        margin:0.2rem;
+        padding:0;
+       }
+       .main-nav__items {
+        width: 65%;
+        align-items:flex-end;
+       }
+ 
+    #key-features .section-title{
+        
+        margin-bottom: 6rem;
+    }
+     
+
+    .plan__list{
+        width: 100%;
+        margin: auto;
+    }
+    .plan{
+        display: inline-block;
+        width:29%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.8rem 1rem;
+        margin: 2rem 0.4rem;
+    }
+
+
+       #key-features{
+        display: inline-block;
+        margin: 4rem 0 0 0;
+        padding:0;
+        width: 100vw;
+        height: 500px;
+        
+       }
+       
+
+       #key-features ul{
+        
+        width: 100%;
+        height: 30rem;
+        position:absolute;
+        display: inline-block;
+        bottom: 0;
+        vertical-align: middle;
+        margin-bottom: 6rem;
+       }
+       
+
+       #key-features ul li{
+        margin-top: 15rem;
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 200px;
+        
+        
+       }
+
+       #key-features ul li div{
+        width: max-content;
+        height: max-content;
+        position: block;
+        display: inline;
+        
+       
+       }
+
+       /* .key--feature__image svg{
+         width: 5rem;
+        height: 5rem; 
+        width: 2.1rem;
+        height: 2.1rem;
+       } */
+
+       #key-features ul li div p{
+        height: 12rem;
+        font-size: 1rem;
+        position: absolute;
+        display: block;
+        top: 10rem;
+       
+       } 
+
+     .key--feature__image {
+      /* width: 8rem;
+      height: 8rem; */
+       display: block;
+       width: 4rem;
+       height: 4rem;
+       }
+  
+  
+   .feature{
+  
+     color: white;
+
+   }
+   
+    
+}
