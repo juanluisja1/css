@@ -1,5 +1,6 @@
-
-
+main {
+    padding-top: 2rem;
+}
 /* overwriting classes */
 
 .backdrop{
@@ -13,141 +14,108 @@
 .background{
     background: url(../images/home-office-work-from-home.png) left 10% top 5%/ cover no-repeat border-box;
     filter: grayscale(40%);
-    /* background:url(../images/home-office-work-from-home.png); */
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    z-index:-1 ;
-}
-
-
-.packages{
-    width: 100%;
-    margin:0;
-    margin-top:2rem;
-    display: inline-block;  
-    align-items: center;
-    
- 
-}
-
-.package{
-    width: 90%;
-    margin: 3rem 0; 
-    padding: 2.1rem;
-    border: 4px solid #d6f8dc;
-    border-left: none;
-    box-shadow: 1px 1px 1px 0.5px rgb(205, 255, 205);
-    color:#0b3e19;
-    position: relative;
     z-index: -1;
 }
 
-
-.package > a{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.package__best-service{
-    position:absolute;
-    right: 2rem;
-    top: -9px;
-    color:#004f0db4;
-    z-index: 0;
-    font-size: 0.8rem;
-    background: #fd3131;
-    color: white;
-    padding:8px;
-    display: inline;
-    
-    
-}
-
-.package__title{
-    font-weight:bold;
-    font-size: 20px;
-    color: black;
-}
-
-
-#free {
-    background: rgba(168, 229, 178, 0.901);
-    float: right;
-    text-align: right;
-    border: 4px solid #d6f8dc;
-    border-right: none;
-    box-shadow: 1px, 1px, 1px, 1px, rgb(205, 255, 205);
-
-}
-
-#free:hover,
-#free:active {
-    border: 4px solid #ff1b68;
-    border-right: none;
-    box-shadow: 1px 1px 1px 0.3px rgb(156, 252, 156);
-    
+.package {
+    width: 80%;
+    margin: 1rem 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
+    position: relative;
 }
 
 .package:hover,
 .package:active {
-    border: 4px solid #ff1b68;
-    border-left: none;
-    box-shadow: 1px 1px 1px 0.5px rgb(156, 252, 156);
-    
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #ff5454;
+    /* border-color: #ff5454 !important; */
 }
 
-.package__desc{
-    padding:0.25rem;
-    font-size: 1.3rem;
-    font-weight:500;
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
 }
 
-.package > a p{
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.2rem;
+    font-size: 0.8rem;
+    color: white;
+    background: #ff5454;
+    padding: 0.5rem;
+}
+
+.package__subtitle {
+    color: #979797;
+}
+
+.package__info {
     padding: 1rem;
-    font-weight:300;
-    background-color: white;
-    border: 1px solid rgba(92, 88, 88, 0.643);
-    color:#004f0db4;
+    border: 1px solid #0e4f1f;
+    font-size: 1.2rem;
+    color: #0e4f1f;
+    background: white;
 }
 
-
-.clear--float{
-    clear:both;
+.clearfix {
+    clear: both;
 }
 
 #plus {
-    margin-top: 6.25rem;
-    background:#2ddf5dec;
-    color:white;
+    background: rgba(213, 255, 220, 0.95);
 }
 
-#plus .package__title{
-
-    background: rgba(255, 255, 255, 0.916);
-    color:#004f0db4;
-    padding: 0.75rem;
-    border-radius:16px;
-    box-shadow: 0 0 3px 2px #d4ffdce7;
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
 }
 
-
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
+}
 
 #premium {
-    background: #004f0dfa;
-    color:white;
+    background: rgba(14, 79, 31, 0.95);
 }
 
-#premium .package__title{
-    background: #004f0db4;
-    color:white;
-    padding: 12px;
-    border-radius:16px;
-    box-shadow: 0 0 3px 2px #83f398;
+#premium .package__title {
+    color: white;
 }
 
-#premium > a p {
-    font-weight:500;
-    color:#073012;
+#premium .package__subtitle {
+    color: #bbb;
+}
+
+@media (min-width: 40rem) {
+    main {
+      margin: 3rem auto;
+      max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .package {
+      border-left: 4px solid #0e4f1f;
+    }
+
+    #free {
+      border-right: 4px solid #0e4f1f;
+    }
+
+    #free:hover,
+    #free:active {
+      border-right-color: #ff5454;
+    }
 }

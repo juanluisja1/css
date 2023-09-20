@@ -1,0 +1,26 @@
+@media (min-width:42){
+
+    .testimonial {
+        font-size: 1.2rem;
+        margin: 3rem 0;
+    }
+
+    .testimonial__image-container {
+  
+      display: inline-block;
+      vertical-align: middle;
+      width:65% ;
+      
+     }
+
+     .testimonial__info {
+      
+      display: inline-block;
+      vertical-align: middle;
+      width: 30%;
+    }
+    
+
+  }
+  
+  

@@ -13,9 +13,11 @@
     box-shadow: 1px 1px 3px 2px rgba(255, 255, 255, 0.5);
 }
 
+
 /* ---- end overwrite ---- */
 
 #product-overview {
+   
     /* background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url(freedom.jpg) left 10% bottom 70%/ cover no-repeat border-box, #ff1b68; */
     background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url(freedom.jpg) center/ cover no-repeat border-box, #ff1b68;
     /* background-image: url(freedom.jpg);
@@ -28,7 +30,7 @@
     /* background-image: radial-gradient(ellipse ,blue, green,yellow); */
     /* abackground-image: radial-gradient(ellipse ,blue, green,yellow); */
     /* background-image: radial-gradient(ellipse farthest-corner at 15% 85% ,blue, green,yellow); */
-    
+
     position:relative;
     width: 100vw;
     height:42vh;
@@ -51,12 +53,15 @@
 
 
 
-
+.toggle-button{
+    position: relative;
+    left:1.4rem;
+}
 
 
 .main_body{
     width:100%;
-
+    
 }
 
 
@@ -307,29 +312,47 @@
     padding:0; */
    }
 
+   .main-header{
+    position:fixed;
+  }
+
 
 
   @media (min-width:42rem){
     #product-overview{
         height:45vh;
         background-position: 50% 25%;
+        top: 3.2rem;
+        /* margin-top: 4rem; */
     }
 
     #product-overview h1{
         font-size: 3rem;
-        top:13rem;
+        top:17.33rem;
     }
 
     .main-nav, .main-header__brand, .main-nav__items {
         display: inline-block;
        
-        margin:0.2rem;
+        margin:0.34rem;
         padding:0;
        }
        .main-nav__items {
         width: 65%;
         align-items:flex-end;
        }
+
+       .main-header__brand a img {
+
+        display: inline-block;
+        width: 3rem;   
+        /* margin:0.2rem; */
+        z-index: 2;   
+    }  
+
+    #plans{
+        margin-top:8rem;
+    }
  
     #key-features .section-title{
         
@@ -422,6 +445,8 @@
      color: white;
 
    }
+
+   
    
     
 }
