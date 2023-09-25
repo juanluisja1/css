@@ -34,7 +34,7 @@ body{
     position:fixed;
     display: inline-block;
   
-    width: 80%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -42,9 +42,9 @@ body{
 .main-nav {
     
     position:relative;
-    width: 10%;
+    width: 50%;
     display: inline;
-    padding:0.8rem;
+    /* padding:0.8rem; */
     margin:0;
 }
 
@@ -108,13 +108,14 @@ body{
     background: rgb(3, 3, 3);
     display: block;
     margin: 0.6rem 0;
+    
   }
 
   
 
   .main-header__brand img{
     
-    display: inline;
+    display: none;
     height: 2.2rem;
     /* width:100%; */
     vertical-align: middle;
@@ -133,7 +134,7 @@ body{
 
 .main-nav {
     align-items:stretch;
-    display: inline-block;
+    display: none; /* inline-block*/
     position: relative;
     text-align: right;
     width: 100%;
@@ -166,18 +167,6 @@ body{
 }
 
 
-/* css by the class
- */
-
-
- .signup-title{
-    text-align:center;
-    font-size: 1.8rem;
-    color:#ff5454;
- }
-
-
- /*end css by the class*/
 
 
 
@@ -271,6 +260,36 @@ body{
     display: block !important;
 }
 
+/* css by the class
+ */
+
+
+ .signup-title{
+    text-align:center;
+    font-size: 1.8rem;
+    color:#ff5454;
+ }
+
+ .signup-form label{
+    font-weight:bold;
+ }
+
+
+/* .signup-form input[type='checkbox'] */
+ .signup-form input[id*="terms"],
+ .signup-form input[id*="terms"]+label{
+    display: inline-block;   
+    width:auto; 
+ }
+
+ .signup-form button[type="submit"]{
+    display: block;
+    margin-top:1rem;
+ }
+
+ 
+
+ /*end css by the class*/
 
 
 /* h1{
@@ -281,15 +300,7 @@ body{
 
 @media (min-width:42rem) {
 
-    #product-overview{
-        height:45vh;
-        background-position: 50% 25%;
-    }
-
-    #product-overview h1{
-        font-size: 3rem;
-        top:13rem;
-    }
+   
 
     .main-header{
         width: 100%;
@@ -302,13 +313,14 @@ body{
     }
 
     .main-nav{
+        display: inline-block;
         right:0.3rem;
         width: 90%;
     }
 
     .main-nav__items{
         position: relative;
-        width: 20%;
+        width: 25%;
     }    
 
     .main-nav .main-nav__item a{
@@ -343,11 +355,17 @@ body{
      .main-header__brand a img {
 
         display: inline-block;
+        position: absolute;
         width: 3rem;   
         z-index: 2;   
     }
     div.main-hear__brand{
         width: 20%;
+    }
+
+    .signup-form{
+        margin: auto;
+        width:25rem;
     }
 
     
