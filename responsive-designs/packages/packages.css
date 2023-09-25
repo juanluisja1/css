@@ -12,9 +12,9 @@ main {
   
     text-decoration: none;
     background-color:#24d453;
-   /* vertical-align: middle; */
-    /* margin-top:0.8rem; */
-    /* padding: 0.8rem ; */
+   vertical-align: middle;
+    /* margin-top:0.8rem;
+    padding: 0.8rem ; */
     position:fixed;
     display: inline;
     width: 100%;
@@ -29,10 +29,29 @@ main {
   }
 
 
+.main-nav___item--cta a,
+.mobile-nav__item--cta a {
+    color: seashell;
+    background-color:#ff1b68;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+}
+
+.main-nav___item--cta a:hover,
+ .main-nav___item--cta a:active,
+  .mobile-nav__item--cta a:hover,
+   .mobile-nav__item--cta a:active {
+
+    color: #ff1b68;
+    background: seashell;
+    border: none;
+}
+
+
 /* end overwritting css classes */
 .main-nav{
-    display: none;
-    width: min-content;
+    display: inline;
+    
 }
 
 
@@ -127,12 +146,9 @@ main {
     main {
     
       max-width: 1500px;
+     
     }
 
-    .main-nav{
-        display: inline-block;
-        width: 100%;
-    }
     .main-header{
   
         position:fixed;
@@ -141,6 +157,25 @@ main {
         z-index: 1;
         padding:0.97rem;
     }
+
+    .main-nav{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .main-nav___item--cta a:hover, .main-nav___item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
+    
+        color: #ff1b68;
+        background: seashell;
+        border: none;
+    }
+    .main-header__brand img{
+        position:absolute;
+        top: 0;
+        width: auto;
+        
+      }
+    
 }
 
 @media (min-width: 1200px) {

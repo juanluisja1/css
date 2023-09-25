@@ -156,19 +156,7 @@ body{
     vertical-align: middle;
 }
 
-.main-nav___item--cta a , .mobile-nav__item--cta a {
-    color: seashell;
-    background-color:#ff1b68;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-}
 
-.main-nav___item--cta a:hover, .main-nav___item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
-
-    color: #ff1b68;
-    background: seashell;
-    border: none;
-}
 
 .main-footer{
     background-color: black;
@@ -302,6 +290,19 @@ body{
         display: inline;
     }    
 
+    .main-nav___item--cta a , .mobile-nav__item--cta a {
+        color: seashell;
+        background-color:#ff1b68;
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+    }
+    
+    .main-nav___item--cta a:hover, .main-nav___item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
+    
+        color: #ff1b68;
+        background: seashell;
+        border: none;
+    }
     .toggle-button {
         display: none;
        
@@ -324,9 +325,7 @@ body{
         width: 20%;
     }
 
-    .main-header > div > a {
-        display: inline;
-    }
+    
 }
 
 

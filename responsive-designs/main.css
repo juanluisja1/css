@@ -71,7 +71,7 @@
     padding: 1.6rem;
     background: #a0f6b7;
     text-align: center;
-    padding: 0.8rem 0.5;
+    padding: 0.8rem 0.5rem;
     margin: 2rem auto;
     max-width: 20rem;
     border-radius:8px;
@@ -96,7 +96,7 @@
     border-radius: 10px;
     /* border: 3px solid rgb(255, 255, 255); */
     /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.659); */
-    padding: 0.4rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .plan__list .plan:hover{
@@ -108,7 +108,7 @@
 
     background: white ;
     color: #0e4f1f;
-    padding: 10px 0px;
+    padding: 0.7rem 0.6rem;
     box-shadow: 2px 3px 0px 0px rgba(0,0,0,0.5);
     border-radius: 5px;
 }
@@ -325,10 +325,10 @@
         top: 3.2rem;
         /* margin-top: 4rem; */
     }
-
+   
     #product-overview h1{
         font-size: 3rem;
-        top:17.33rem;
+        top:15rem;
     }
 
     .main-nav, .main-header__brand, .main-nav__items {
@@ -362,15 +362,15 @@
 
     .plan__list{
         width: 100%;
-        margin: auto;
+        /* margin: 0.5?rem; */
     }
     .plan{
         display: inline-block;
         width:29%;
         text-align: center;
         vertical-align: middle;
-        padding: 0.8rem 1rem;
-        margin: 2rem 0.4rem;
+        margin: 0 0.2rem;
+       
     }
 
 
