@@ -280,17 +280,22 @@ body{
  .signup-form input[id*="terms"]+label{
     display: inline-block;   
     width:auto; 
+    vertical-align: bottom;
  }
 
- .signup-form input,
+ .signup-form input:not([type="checkbox"]),
  .signup-form select {
     border: 1px solid #ccc;
     font:inherit;
  }
 
- .signup-form button[type="submit"]{
-    display: block;
-    margin-top:1rem;
+ .signup-form input[type="checkbox"]/* .signup-form input[id*="terms"] */
+ {
+    border:1px solid #ccc;
+    background: #f4fff7;
+    width: 1rem;
+    height:1rem;
+    -webkit-apperance: none;
  }
 
  .signup-form input:focus,
@@ -299,6 +304,43 @@ body{
     background: #f4fff7;
     border-color: #bbffcd;
  }
+
+ .signup-form input[type="checkbox"]:checked{
+    background:#bbffcd;
+    border:#0e4f1f;
+ }
+
+ /* .signup-form input.invalid,
+ .signup-form select.invalid, */
+ .signup-form  :invalid {
+
+    border-color: red;
+    background:#fad8d8;
+    
+ }
+
+ .signup-form button[type="submit"]{
+    display: block;
+    margin-top:1rem;
+ }
+
+
+ .button[disabled]{
+    cursor: not-allowed;
+    color:#073814;
+    border:gray;
+    background:gray;
+ }
+
+ .button[disabled]:hover,
+ .button[disabled]:active{
+    color:#286538;
+    border:rgb(107, 107, 107);
+    background:rgb(111, 110, 110);
+ }
+
+
+
  
 
  /*end css by the class*/
