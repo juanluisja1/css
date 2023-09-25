@@ -282,11 +282,23 @@ body{
     width:auto; 
  }
 
+ .signup-form input,
+ .signup-form select {
+    border: 1px solid #ccc;
+    font:inherit;
+ }
+
  .signup-form button[type="submit"]{
     display: block;
     margin-top:1rem;
  }
 
+ .signup-form input:focus,
+ .signup-form select:focus{
+    outline:none;
+    background: #f4fff7;
+    border-color: #bbffcd;
+ }
  
 
  /*end css by the class*/
