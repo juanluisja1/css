@@ -63,6 +63,14 @@ main {
     font-family: anonymousPro;
     font-weight: normal;
     font-style: italic;
+    /* text-shadow: 5px 5px 5px rgba(96, 122, 98, 0.808); */
+    /* font-variant: small-caps; */ 
+    /* this properties will help you to customize how the text behaveis depending in the choise, small-caps will make all letter caps */
+    /* line-height: 2; */
+    /* line-height depends on the font we use */
+    /* text-decoration:line-through; */
+    /* text-decoration:dotted line-through red; */
+    /* text-decoration:underline wavy red; it can be use to highlighted something that need to be fixed */
 }
 
 .clearfix {
