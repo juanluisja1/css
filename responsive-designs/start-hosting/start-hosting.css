@@ -378,11 +378,12 @@ body{
 
     .main-nav{
        
-        display: inline;
-        position:inline-block;
-        width:100%;
-        left: 15rem;
-    
+        display:inline-block;
+        position:relative;
+        width:90%;
+        left: 2.8rem;
+        /* left: 15rem;
+     */
         
     } 
 
@@ -393,7 +394,7 @@ body{
     .main-nav .main-nav__item a{
         display: inline;
         /* padding:0.3rem 0.8rem; */
-        padding:0.3rem 0.7rem;
+        padding:0.3rem 1rem;
         margin:0;
     }    
 

@@ -1,3 +1,9 @@
+
+/* @font-face {
+    font-family: "anonymousPro";
+    src: url();
+} */
+
 main {
     padding-top: 2rem;
 }
@@ -54,6 +60,9 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-family: anonymousPro;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .clearfix {
