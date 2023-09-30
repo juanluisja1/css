@@ -63,6 +63,8 @@ main {
     font-family: anonymousPro;
     font-weight: normal;
     font-style: italic;
+    /* short hand you can have font: {-1. small-caps, 0. weight, 1. size, 2. font-family (second), 3.  */
+        /* ex. font: italic small-caps 700 1.2rem/2(line-height) "AnonymousPro", "sans-serif" */
     /* text-shadow: 5px 5px 5px rgba(96, 122, 98, 0.808); */
     /* font-variant: small-caps; */ 
     /* this properties will help you to customize how the text behaveis depending in the choise, small-caps will make all letter caps */
