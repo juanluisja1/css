@@ -18,7 +18,44 @@ body {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 45rem;;
+    display: flex;
+    flex-flow: wrap row;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    align-items:center;
+    justify-content: center;
+    align-content: center;  /* */
   }
+
+  /* flex-direction & flex-wrap */
+  /*  these two are applied by default
+    flex-direction: row; //top-left corner and top-left -> bottom
+    flex-wrap:nowrap;
+    flex-wrap:wrap, it box all elements withing the flex-container
+
+    align-items: stretch; is by default
+
+    flex-direction: row, will make the flow go from the left top corner to the right
+
+    using align-items: center, will align your items on the center of cross axis
+
+    using justify-content: center, will align your items on the center of main axis
+
+    the previous are affect by the underlining flow, flex-directions: row && flex-wrap:wrap, so
+    the main axis goes from the top left to the right and cross axis top to bottom.
+
+
+    flex-direction: column, will make the flow go from the left top corner to the bottom.
+
+    using align-items: center, will align your items on the center of cross axis(which goes left - right
+
+    using justify-content: center, will align your items on the center of main axis(which goes top - bottom
+
+    the previous are affect by the underlining flow, flex-directions: row && flex-wrap:wrap, so
+    the main axis goes from the top left to the right and cross axis top to bottom.
+
+  */
 
 .item-1 {
     background: #ff7300;
