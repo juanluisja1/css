@@ -5,6 +5,10 @@
   body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
+    font-size:16px;
+    position:relative;
+    background: linear-gradient(to bottom right, rgba(236, 233, 59, 0.188) 25%, transparent);
+    /* height: 100%; */
   }
   
   main {
@@ -24,13 +28,15 @@
   }
   
   .main-header {
+    text-decoration: none;
+    background-color:#24d453;
+    position:fixed;
+    display: block;
     width: 100%;
-    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background: #2ddf5c;
     padding: 0.2rem 0.5rem;
-    z-index: 1;
   }
   
   .main-header > div {
@@ -42,13 +48,15 @@
 
   
   .toggle-button {
+    display: inline;
     width: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
     padding-top: 0;
     padding-bottom: 0;
-    vertical-align: middle;
+    margin: 0 0 0 0.5rem;
+    
   }
   
   .toggle-button:focus {

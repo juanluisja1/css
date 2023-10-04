@@ -8,25 +8,7 @@ main {
     height: 124vh;
    
 }
-.main-header{
-  
-    text-decoration: none;
-    background-color:#24d453;
-   vertical-align: middle;
-    /* margin-top:0.8rem;
-    padding: 0.8rem ; */
-    position:fixed;
-    display: inline;
-    width: 100%;
-    z-index: 1;
-    /* padding:0.97rem; */
-   
-}
-.main-header__brand img{
-    position: relative;
-    left: 0.8rem;
-    
-  }
+
 
 
 .main-nav___item--cta a,
