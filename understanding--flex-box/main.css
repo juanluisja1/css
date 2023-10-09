@@ -21,11 +21,15 @@ body {
     height: 45rem;;
     display: flex;
     flex-flow: wrap row;
+
+
     /* flex-direction: row;
     flex-wrap: wrap; */
-    align-items:center;
-    justify-content: center;
-    align-content: center;  /* */
+
+    /* depending on flex-flow or flex-direction and flex-wrap it will behave diffently*/ 
+    align-items:center; /* affects the main axis*/
+    justify-content: center;  /* affects the main (when flex-direction: row ) | ! cross axis if column*/
+   align-content: center;
   }
 
   /* flex-direction & flex-wrap */
