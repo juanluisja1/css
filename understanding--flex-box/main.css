@@ -20,7 +20,7 @@ body {
     border: 5px solid black;
     height: 45rem;;
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: nowrap row;
 
 
     /* flex-direction: row;
@@ -29,7 +29,7 @@ body {
     /* depending on flex-flow or flex-direction and flex-wrap it will behave diffently*/ 
     align-items:center; /* affects the main axis*/
     justify-content: center;  /* affects the main (when flex-direction: row ) | ! cross axis if column*/
-   align-content: center;
+  
   }
 
   /* flex-direction & flex-wrap */
@@ -86,9 +86,11 @@ body {
     border: 5px solid black;
     margin: 10px;
     height: 250px;
+    align-self: center;
 }
 
 .item-4 {
+    order:-1;
     background: #f5c096;
     color: white;
     padding: 10px;
@@ -105,6 +107,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-basis: 23rem;
 }
 
 .item-6 {
