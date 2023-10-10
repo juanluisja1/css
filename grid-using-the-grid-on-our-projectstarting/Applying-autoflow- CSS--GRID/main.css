@@ -1,12 +1,22 @@
 .container {
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 15rem);
+    grid-template-columns: repeat(3, 10rem); 
+    /* auto-fill or auto-fit for repeat first argument */
+    grid-template-rows: 14rem;
     justify-content: center;
     grid-gap: 1.5rem;
     grid-auto-rows: minmax(8rem, auto);
-    grid-auto-flow: row;
+    /* dense on grid-auto-flow. If specified, the auto-placement algorithm
+    uses a "dense" packing algorithm, which attempts
+    to fill in holes earlier in the grid if smaller 
+    items come up later. */
+    grid-auto-flow: row dense;
     grid-auto-columns: 5rem;
+    /* grid-auto-rows: minmax(8rem, auto); */
+    /* to change the flow of adding ot the bottom you can use the property below */
+     /* grid-auto-flow: column; /*it is row by default */
+     /* grid-auto-columns: 8rem; */
 }
 
 .quote {
@@ -17,6 +27,9 @@
   border-radius: 5px;
 }
 
+.quote:nth-of-type(2) {
+  grid-column: span 2;
+}
 .quote--featured {
   border: #ff4213;
   background: #ff9f87;
