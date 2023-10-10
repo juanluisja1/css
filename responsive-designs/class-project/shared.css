@@ -5,15 +5,21 @@
 * {
   box-sizing: border-box;
 }
+htlm{height: 100%;}
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
+  /* min-height: calc(100vh - 3.5rem - 8rem); */
   margin-top: 3.5rem;
+  grid-area: "main";
 }
 
 .backdrop {
@@ -38,6 +44,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-area: "header";
 }
 
 
@@ -139,6 +146,7 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  grid-area: "footer";
 }
 
 .main-footer__links {
