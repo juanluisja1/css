@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+:root {
+  --main-color-dark-green: #13692a;
+  --secondary-color-cta-red:#ff1b68;
+  --secondary-green-color:#2ddf5c; 
+}
+
 
 * {
   box-sizing: border-box;
@@ -45,10 +51,14 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background: #2ddf5c;
+  background: var(--secondary-green-color, #2ddf5c);
   padding: 0.5rem 1rem;
   z-index: 1;
   display: flex;
+  /* using vendoer prefixes */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   align-items: center;
   justify-content: space-between;
   grid-area: header;
@@ -78,7 +88,7 @@ main {
 }
 
 .main-header__brand {
-  color: #0e4f1f;
+  color:var(--main-color-dark-green);
   text-decoration: none;
   font-weight: bold;
  
@@ -125,7 +135,7 @@ main {
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
-  background: #ff1b68;
+  background: var(--secondary-color-cta-red);
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
@@ -134,7 +144,7 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
+  color:var(--secondary-color-cta-red);
   background: white;
   border: none;
 }
@@ -207,7 +217,7 @@ main {
 
 .mobile-nav__item > a:hover{
  
-  color: #13692a;
+  color: var(--main-color-dark-green);
 }
 
 .mobile-nav__item--cta > a:hover{
@@ -237,7 +247,7 @@ main {
 .button:hover,
 .button:active {
   background: white;
-  color: #0e4f1f;
+  color:var(--main-color-dark-green);
 }
 
 .button:focus {
